@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+data/raw/*
+data/processed/*
+data/features/*
+data/metadata/*
+data/*.sqlite3
+models/ml/*.joblib
+models/dl/*.pt
+models/registry.json
+evaluation/results/*
+!**/.gitkeep
+.env

@@ -1,0 +1,796 @@
+[
+  {
+    "name": "dl-cnn",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 0.6666666666666666,
+    "path": "models\\dl\\cnn.pt",
+    "trained_at": "2026-10-23T16:44:19+00:00"
+  },
+  {
+    "name": "ml-nasa-ims-rexnord",
+    "version": "v1",
+    "kind": "ml",
+    "dataset": "nasa_ims_run2",
+    "n_features": 44,
+    "params": {
+      "backend": "random_forest",
+      "geometry": "ims_zA2115",
+      "bearings": "Rexnord ZA-2115"
+    },
+    "val_score": 1.0,
+    "test_score": 0.9663561076604554,
+    "path": "models\\ml\\nasa_ims_bundle.joblib",
+    "trained_at": "2026-10-27T15:07:29+00:00"
+  },
+  {
+    "name": "dl-nasa-ims-cnn",
+    "version": "v1",
+    "kind": "dl",
+    "dataset": "nasa_ims_run2",
+    "n_features": null,
+    "params": {
+      "architecture": "Conv1DNet",
+      "epochs": 12,
+      "sample_rate": 20000,
+      "geometry": "ims_zA2115"
+    },
+    "val_score": 0.99609375,
+    "test_score": 0.7538461538461538,
+    "path": "models\\dl\\nasa_ims_cnn.pt",
+    "trained_at": "2026-10-27T15:08:21+00:00"
+  },
+  {
+    "name": "ml-random_forest",
+    "version": "v2",
+    "kind": "ml",
+    "dataset": "cwru_12k_and_physics_sim",
+    "n_features": 30,
+    "params": {
+      "backend": "lightgbm"
+    },
+    "val_score": 0.9880884855360181,
+    "test_score": 1.0,
+    "path": "models\\ml\\ml_bundle.joblib",
+    "trained_at": "2026-10-27T15:41:27+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v9",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "models\\dl\\cnn.pt",
+    "trained_at": "2026-10-27T15:42:29+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "models\\dl\\pi_da.pt",
+    "trained_at": "2026-10-27T15:42:36+00:00"
+  },
+  {
+    "name": "ml-lightgbm",
+    "version": "v7",
+    "kind": "ml",
+    "dataset": "paderborn_6203",
+    "n_features": 30,
+    "params": {
+      "backend": "lightgbm"
+    },
+    "val_score": 0.4258904150051691,
+    "test_score": 0.43,
+    "path": "models\\ml\\paderborn_bundle.joblib",
+    "trained_at": "2026-10-27T16:26:53+00:00"
+  },
+  {
+    "name": "ml-lightgbm",
+    "version": "v8",
+    "kind": "ml",
+    "dataset": "paderborn_6203",
+    "n_features": 30,
+    "params": {
+      "backend": "lightgbm"
+    },
+    "val_score": 0.845150311968236,
+    "test_score": 0.45110902255639096,
+    "path": "models\\ml\\paderborn_bundle.joblib",
+    "trained_at": "2026-10-27T16:27:20+00:00"
+  },
+  {
+    "name": "ml-random_forest",
+    "version": "v3",
+    "kind": "ml",
+    "dataset": "paderborn_6203",
+    "n_features": 30,
+    "params": {
+      "backend": "lightgbm"
+    },
+    "val_score": 1.0,
+    "test_score": 0.9458064516129032,
+    "path": "models\\ml\\paderborn_bundle.joblib",
+    "trained_at": "2026-10-27T16:28:55+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v14",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.5858761664938528,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\tmp903erlm5\\cnn.pt",
+    "trained_at": "2026-10-27T19:54:38+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v11",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\tmp903erlm5\\pi_da.pt",
+    "trained_at": "2026-10-27T19:54:41+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v15",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9556489262371615,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-18\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-27T19:55:34+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v9",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-18\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-27T19:55:35+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v12",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-18\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-27T19:55:36+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v12",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-18\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-27T19:55:36+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v9",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.973137192196994,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-18\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-27T19:55:40+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v12",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-18\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-27T19:55:45+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v16",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9088874680306905,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-19\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-27T19:56:08+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v10",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-19\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-27T19:56:09+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v13",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-19\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-27T19:56:09+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v13",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-19\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-27T19:56:10+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v10",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.8978441127694858,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-19\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-27T19:56:14+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v13",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-19\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-27T19:56:18+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9556489262371615,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-20\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-27T20:06:53+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v3",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-20\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-27T20:06:54+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v3",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-20\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-27T20:06:55+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v3",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-20\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-27T20:06:56+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v3",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.9365079365079365,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-20\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-27T20:07:00+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v5",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-20\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-27T20:07:04+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v7",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9373626373626374,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-21\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-27T20:07:58+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v4",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-21\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-27T20:07:59+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v4",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-21\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-27T20:08:00+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v4",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-21\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-27T20:08:00+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v4",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.9549983927997429,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-21\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-27T20:08:04+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-21\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-27T20:08:09+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v8",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9465625,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-22\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-27T20:24:23+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v5",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-22\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-27T20:24:24+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v5",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-22\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-27T20:24:24+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v5",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-22\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-27T20:24:25+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v5",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.9458064516129032,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-22\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-27T20:24:29+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v7",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-22\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-27T20:24:34+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v9",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9556489262371615,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-24\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-28T16:52:37+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-24\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-28T16:52:38+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-24\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-28T16:52:38+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-24\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-28T16:52:39+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v6",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.9365079365079365,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-24\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-28T16:52:44+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v8",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-24\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-28T16:52:48+00:00"
+  },
+  {
+    "name": "dl-cnn",
+    "version": "v10",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.9556489262371615,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-25\\test_all_models_train_two_epoc0\\cnn.pt",
+    "trained_at": "2026-10-28T16:53:27+00:00"
+  },
+  {
+    "name": "dl-cnn_gru",
+    "version": "v7",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-25\\test_all_models_train_two_epoc0\\cnn_gru.pt",
+    "trained_at": "2026-10-28T16:53:28+00:00"
+  },
+  {
+    "name": "dl-multimodal",
+    "version": "v7",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.0
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-25\\test_all_models_train_two_epoc0\\multimodal.pt",
+    "trained_at": "2026-10-28T16:53:29+00:00"
+  },
+  {
+    "name": "dl-pi",
+    "version": "v7",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.0
+    },
+    "val_score": 1.0,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-25\\test_all_models_train_two_epoc0\\pi.pt",
+    "trained_at": "2026-10-28T16:53:30+00:00"
+  },
+  {
+    "name": "dl-da",
+    "version": "v7",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.0,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.8978441127694858,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-25\\test_all_models_train_two_epoc0\\da.pt",
+    "trained_at": "2026-10-28T16:53:34+00:00"
+  },
+  {
+    "name": "dl-pi_da",
+    "version": "v9",
+    "kind": "dl",
+    "dataset": "cwru_windows",
+    "n_features": null,
+    "params": {
+      "lambda_physics": 0.1,
+      "lambda_domain": 0.05
+    },
+    "val_score": 0.6666666666666666,
+    "test_score": 1.0,
+    "path": "C:\\Users\\amank\\AppData\\Local\\Temp\\pytest-of-amank\\pytest-25\\test_all_models_train_two_epoc0\\pi_da.pt",
+    "trained_at": "2026-10-28T16:53:38+00:00"
+  }
+]

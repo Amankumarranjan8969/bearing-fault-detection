@@ -1,0 +1,229 @@
+/* ==============================================================================
+   BEARING DIGITAL TWIN — DESIGN SYSTEM TOKENS (tokens.css)
+   Linear / Raycast inspired industrial aesthetic.
+   High contrast, accessible, dark/light theme support with fluid typography.
+   ============================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Typography Stack */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", Consolas, "Liberation Mono", monospace;
+  --font: var(--font-sans);
+
+  /* Type Scale */
+  --text-2xs: 10px;
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-base: 13.5px;
+  --text-md: 15px;
+  --text-lg: 18px;
+  --text-xl: 21px;
+  --text-2xl: 26px;
+  --text-3xl: 34px;
+  --text-4xl: 44px;
+
+  /* Spacing Scale (4px base) */
+  --s0: 0px;
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 20px;
+  --s6: 24px;
+  --s7: 32px;
+  --s8: 48px;
+  --s9: 64px;
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Light Theme Surfaces & Backgrounds */
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-elevated: #F1F5F9;
+  --surface-hover: #EDF2F7;
+  --surface-active: #E2E8F0;
+  --surface-sunken: #F1F5F9;
+  --surface-overlay: rgba(255, 255, 255, 0.94);
+  --topbar-bg: rgba(255, 255, 255, 0.88);
+  --demo-bg: #F8FAFC;
+
+  /* Light Theme Borders */
+  --border: rgba(15, 23, 42, 0.08);
+  --border-subtle: rgba(15, 23, 42, 0.05);
+  --border-strong: rgba(15, 23, 42, 0.15);
+  --border-hover: rgba(15, 23, 42, 0.22);
+  --border-focus: #2563EB;
+
+  /* Light Theme Typography Colors */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-subtle: #94A3B8;
+  --text-inverse: #FFFFFF;
+
+  /* Brand / Primary Accent (Deep Technical Blue) */
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-light: #3B82F6;
+  --accent-subtle: rgba(37, 99, 235, 0.08);
+  --on-accent: #FFFFFF;
+  --brand: var(--accent);
+  --on-brand: var(--on-accent);
+
+  /* Info / Telemetry Accent (Cyan / Sky) */
+  --info: #0284C7;
+  --info-light: #38BDF8;
+  --info-subtle: rgba(2, 132, 199, 0.08);
+  --info-border: rgba(2, 132, 199, 0.25);
+
+  /* Health & Alert State Colors */
+  --healthy: #10B981;
+  --healthy-subtle: rgba(16, 185, 129, 0.08);
+  --healthy-border: rgba(16, 185, 129, 0.25);
+  --healthy-glow: rgba(16, 185, 129, 0.35);
+
+  --warning: #F59E0B;
+  --warning-subtle: rgba(245, 158, 11, 0.08);
+  --warning-border: rgba(245, 158, 11, 0.25);
+  --warning-glow: rgba(245, 158, 11, 0.35);
+
+  --degraded: #EA580C;
+  --degraded-subtle: rgba(234, 88, 12, 0.08);
+  --degraded-border: rgba(234, 88, 12, 0.25);
+
+  --critical: #EF4444;
+  --critical-subtle: rgba(239, 68, 68, 0.08);
+  --critical-border: rgba(239, 68, 68, 0.25);
+  --critical-glow: rgba(239, 68, 68, 0.4);
+
+  --state: var(--healthy);
+  --ok: var(--healthy);
+  --warn: var(--warning);
+  --degr: var(--degraded);
+  --crit: var(--critical);
+
+  /* Physical Component Colors (Bearing Schematic) */
+  --ring: #CBD5E1;
+  --race: #94A3B8;
+  --shaft: #E2E8F0;
+  --ball: #FFFFFF;
+  --track: #E2E8F0;
+
+  /* Aliases for backwards compatibility */
+  --bg: var(--background);
+  --ink: var(--text-primary);
+  --muted: var(--text-secondary);
+  --rule: var(--border);
+
+  /* Elevation Shadows */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.09), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-1: var(--shadow-lg);
+  --glow-accent: 0 0 14px rgba(37, 99, 235, 0.25);
+
+  /* Motion & Easing */
+  --motion-fast: 120ms;
+  --motion-normal: 200ms;
+  --motion-slow: 350ms;
+  --motion-100: 100ms;
+  --motion-150: 150ms;
+  --motion-200: 200ms;
+  --motion-300: 300ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ==============================================================================
+   DARK THEME (Deep Slate / Precision Obsidian)
+   ============================================================================== */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Surfaces & Backgrounds */
+  --background: #090C12;
+  --surface: #0F1420;
+  --surface-elevated: #161D2E;
+  --surface-hover: #1C2438;
+  --surface-active: #232D44;
+  --surface-sunken: #07090E;
+  --surface-overlay: rgba(15, 20, 32, 0.94);
+  --topbar-bg: rgba(9, 12, 18, 0.88);
+  --demo-bg: #0C1019;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --border-hover: rgba(255, 255, 255, 0.22);
+  --border-focus: #3B82F6;
+
+  /* Typography Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-subtle: #475569;
+  --text-inverse: #090C12;
+
+  /* Brand / Primary Accent */
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+  --accent-light: #93C5FD;
+  --accent-subtle: rgba(59, 130, 246, 0.14);
+  --on-accent: #FFFFFF;
+  --brand: var(--accent);
+  --on-brand: var(--on-accent);
+
+  /* Info / Telemetry Accent */
+  --info: #38BDF8;
+  --info-light: #7DD3FC;
+  --info-subtle: rgba(56, 189, 248, 0.12);
+  --info-border: rgba(56, 189, 248, 0.25);
+
+  /* Health & Alert State Colors */
+  --healthy: #10B981;
+  --healthy-subtle: rgba(16, 185, 129, 0.12);
+  --healthy-border: rgba(16, 185, 129, 0.25);
+  --healthy-glow: rgba(16, 185, 129, 0.35);
+
+  --warning: #F59E0B;
+  --warning-subtle: rgba(245, 158, 11, 0.12);
+  --warning-border: rgba(245, 158, 11, 0.25);
+  --warning-glow: rgba(245, 158, 11, 0.35);
+
+  --degraded: #F97316;
+  --degraded-subtle: rgba(249, 115, 22, 0.12);
+  --degraded-border: rgba(249, 115, 22, 0.25);
+
+  --critical: #EF4444;
+  --critical-subtle: rgba(239, 68, 68, 0.14);
+  --critical-border: rgba(239, 68, 68, 0.25);
+  --critical-glow: rgba(239, 68, 68, 0.45);
+
+  /* Physical Component Colors (Dark Mode) */
+  --ring: #263044;
+  --race: #334155;
+  --shaft: #161D2E;
+  --ball: #1E273A;
+  --track: #1C2438;
+
+  /* Dark Elevation Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 22px 30px -5px rgba(0, 0, 0, 0.7), 0 8px 12px -6px rgba(0, 0, 0, 0.5);
+  --shadow-1: var(--shadow-lg);
+  --glow-accent: 0 0 18px rgba(59, 130, 246, 0.35);
+}

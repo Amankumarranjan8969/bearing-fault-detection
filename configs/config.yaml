@@ -1,0 +1,57 @@
+project: bearing-fault-detection
+seed: 42
+classes: [healthy, inner_race, outer_race, ball]
+
+signal:
+  fs: 12000                    # synthetic default. Paderborn 64000, CWRU 12000/48000, IMS 20000
+  window: 8192                 # tune experimentally (window / overlap / sequence length)
+  overlap: 0.5
+  band_hz: [10, 5500]          # pre-processing band-pass, must stay below fs/2
+  envelope_band_hz: [1500, 5000]   # resonance band used for envelope analysis
+  channels: [vibration, current1, current2]
+
+split:
+  group_by: bearing_id         # split BEFORE windowing: no bearing/recording crosses splits
+  ratios: [0.70, 0.15, 0.15]
+
+# VERIFY every geometry against the bearing datasheet before publishing results.
+geometry:
+  synthetic:      {n_balls: 8,  ball_d_mm: 6.75,   pitch_d_mm: 28.5,   contact_deg: 0.0}
+  paderborn_6203: {n_balls: 8,  ball_d_mm: 6.75,   pitch_d_mm: 28.5,   contact_deg: 0.0}
+  cwru_6205:      {n_balls: 9,  ball_d_mm: 7.94,   pitch_d_mm: 39.04,  contact_deg: 0.0}
+  ims_zA2115:     {n_balls: 16, ball_d_mm: 8.4074, pitch_d_mm: 71.501, contact_deg: 15.17}
+
+physics:
+  tolerance_pct: 3.0           # half-width of the band around each characteristic frequency
+  harmonics: 3
+  min_peak_ratio: 3.0          # peak / median envelope spectrum needed to call a peak "evidence"
+
+ml:
+  n_features: 30
+  tune: false
+  tune_iter: 10
+  cv_folds: 3
+
+dl:
+  epochs: 30
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 8
+  lambda_physics: 0.1
+  lambda_domain: 0.05
+  w_align: 1.0                 # spectral alignment (physics head vs measured spectrum)
+  w_consistency: 0.5           # class probability vs measured characteristic-frequency evidence
+
+health:
+  features: [vib_rms, vib_kurtosis, vib_crest, vib_env_rms, vib_env_kurtosis]
+  # Thresholds are design parameters, not universal truths. Calibrate them on run-to-failure data.
+  alert_thresholds: {normal: 70, warning: 50, degradation: 30}
+  fault_prob_warn: 0.8
+  rapid_slope: 2.0             # health points lost per update that triggers escalation
+  temp_warn_c: 80
+
+llm:
+  provider: template           # template | anthropic  (env LLM_PROVIDER overrides)
+  model: claude-sonnet-5-5     # env LLM_MODEL overrides
+  top_k: 4

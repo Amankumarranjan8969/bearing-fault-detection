@@ -1,0 +1,4 @@
+experiment,n_features,accuracy,macro_f1
+A signals,44,0.9285714285714286,0.9255190952910642
+B signals+operating,46,0.9464285714285714,0.944712643678161
+C signals+operating+physics,54,1.0,1.0
