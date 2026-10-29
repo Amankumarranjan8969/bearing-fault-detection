@@ -83,8 +83,17 @@ class InferenceService:
         self.geom = BearingGeometry.from_dict(self.cfg["geometry"][self.geom_key])
         self.bundle_path = Path(bundle_path)
         self.bundle = self._load_or_train(self.bundle_path)
-        self.paderborn_bundle = joblib.load(PADERBORN_BUNDLE) if PADERBORN_BUNDLE.exists() else None
-        self.nasa_bundle = joblib.load(NASA_BUNDLE) if NASA_BUNDLE.exists() else None
+        try:
+            self.paderborn_bundle = joblib.load(PADERBORN_BUNDLE) if PADERBORN_BUNDLE.exists() else None
+        except Exception as e:
+            logger.warning('Could not load Paderborn bundle: %s', e)
+            self.paderborn_bundle = None
+
+        try:
+            self.nasa_bundle = joblib.load(NASA_BUNDLE) if NASA_BUNDLE.exists() else None
+        except Exception as e:
+            logger.warning('Could not load NASA bundle: %s', e)
+            self.nasa_bundle = None
         self.dl_model = None
         self.dl_meta = None
         self._dl_evaluators = {}
@@ -114,7 +123,10 @@ class InferenceService:
     # ---- model ----
     def _load_or_train(self, path):
         if path.exists():
-            return joblib.load(path)
+            try:
+                return joblib.load(path)
+            except Exception as e:
+                logger.warning('Could not unpickle %s: %s. Training fresh fallback...', path, e)
         from ml.train_ml import train_all, save_bundle
         logger.warning("No trained model found at %s: training fallback model...", path)
         cfg = self.cfg
