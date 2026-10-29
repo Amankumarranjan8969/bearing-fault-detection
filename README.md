@@ -93,3 +93,13 @@ python -m evaluation.ablation --features data/features/cwru_features.csv
 # 5. Run Full Automated Test Suite
 python -m pytest -v
 ```
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [`LICENSE`](LICENSE) file for details.
+
+Developed with ❤️ by **Aman Kumar Ranjan (23010301).
+=======
+
+git push -u origin main
+
