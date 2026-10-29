@@ -22,7 +22,11 @@ svc: InferenceService | None = None
 @asynccontextmanager
 async def lifespan(app):
     global svc
-    svc = InferenceService()
+    try:
+        svc = InferenceService()
+    except Exception as e:
+        logger.error('Error during InferenceService startup: %s', e, exc_info=True)
+        svc = None
     yield
 
 
@@ -565,4 +569,11 @@ def get_reports_history(q: str = Query(""), search: str = Query(""), limit: int 
     }
 
 
-app.mount("/", StaticFiles(directory=ROOT / "frontend" / "dashboard", html=True), name="dashboard")
+static_dir = ROOT / "frontend" / "dashboard"
+if static_dir.exists():
+    app.mount("/", StaticFiles(directory=str(static_dir), html=True), name="dashboard")
+else:
+    from fastapi.responses import HTMLResponse
+    @app.get("/", response_class=HTMLResponse)
+    def index_fallback():
+        return "<html><body style='background:#090c12;color:#fff;text-align:center;padding:50px;'><h1>Bearing Fault Detection Service is Active</h1><p><a href='/docs' style='color:#00e5ff;'>API Documentation</a></p></body></html>"

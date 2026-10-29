@@ -1,5 +1,13 @@
-{
+﻿{
   "version": 2,
+  "functions": {
+    "backend/main.py": {
+      "includeFiles": "frontend/**,configs/**,data/features/**,data/metadata/**,rag/**,docs/**"
+    },
+    "api/index.py": {
+      "includeFiles": "frontend/**,configs/**,data/features/**,data/metadata/**,rag/**,docs/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
